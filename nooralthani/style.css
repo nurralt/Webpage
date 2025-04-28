@@ -1,0 +1,371 @@
+/* Add Local Font Definitions */
+@font-face {
+    font-family: 'navFont';
+    src: url('font/climat.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'navFont';
+    src: url('font/climat.ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Set Background Color of the Website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #A6896F; 
+    line-height: 1.6;
+}
+
+/* Favicon */
+link[rel="icon"] {
+    content: url('favicon.ico'); 
+}
+
+/* Header and Navigation Styles */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #594636;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added subtle shadow for header */
+}
+
+/* Menu text with glow and shadow */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'navFont', Arial, sans-serif; /* Updated font-family */
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.7); /* Glow effect */
+}
+
+nav ul li a:hover {
+    background-color: #594636;
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.5), 0 0 25px rgba(255, 255, 255, 0.7); /* Enhanced hover glow */
+}
+
+/* Logo Styling */
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Style the books container */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #D9BBA0; /* Subtle background color for books container */
+}
+
+/* Style each book item */
+.book {
+    width: 28%; /* Adjust the width to fit 3 books per row */
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Subtle smaller border around each book */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Reduced shadow for a cleaner look */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+}
+
+/* Style the images inside each book */
+.book img {
+    width: 70%; /* Reduced width to make images smaller */
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd; /* Smaller border around the image */
+}
+
+
+/* Figure image resizing */
+figure img {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+/* Footer */
+footer {
+    background: #594636;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Other sections */
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #D9BBA0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Column layout with rule dotted */
+.column-container {
+    column-count: 2; 
+    column-gap: 40px; 
+    column-rule: 2px dotted #594636;
+    text-align: justify;
+    padding: 10px; /* Added padding for readability */
+}
+
+/* First-letter styling */
+section p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+    color: #594636;
+    text-transform: uppercase;
+}
+
+/* Error message styling */
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+/* Welcome section */
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen */
+    width: 98%;
+    text-align: center;
+    background: url('image/welcome.jpg') no-repeat center center/cover; /* Background image */
+    color: #ffffff; /* Changed text color to black */
+    padding: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Added inner shadow for depth */
+    
+}
+
+#welcome h2 {
+    font-size: 3rem; /* Bigger headline */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#welcome p {
+    font-size: 1.5rem;
+    max-width: 800px;
+    line-height: 1.6;
+    background: rgba(255, 255, 255, 0.7); /* Light background for readability */
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none; /* Removed border */
+}
+
+/* Additional Styling for Elements */
+a {
+    text-decoration: none;
+    color: #594636;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #A6896F;
+}
+
+/* Button Styles */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    background-color: #594636;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A6896F;
+}
+
+/* Style for paragraphs */
+section p {
+    font-size: 1.5rem; /* Increase font size */
+    font-style: italic; /* Make text italic */
+    color: #594636; /* Optional: change text color for better readability */
+}
+.members-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the images */
+    flex-wrap: wrap; /* Allows wrapping if the screen size is small */
+    margin: 20px 0;
+}
+
+.member {
+    text-align: center;
+    width: 25%; /* Reduced the width of each member box to make them smaller */
+    padding: 10px;
+    border-radius: 8px; /* Rounded corners for the shadow box */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.member img {
+    width: 80%; /* Reduced the width of the image to make them smaller */
+    height: auto;
+    border-radius: 50%; /* Circular shape for the images */
+    margin-bottom: 10px; /* Space between image and text */
+}
+
+.member h3 {
+    margin: 10px 0 5px;
+    font-size: 1.1em; /* Slightly smaller font size */
+}
+
+.member p {
+    font-size: 0.9em; /* Smaller font size for better proportion */
+    color: #666;
+}
+
+audio {
+    display: block; /* Makes the audio element a block-level element */
+    margin: 20px auto; /* Centers the audio player horizontally and adds vertical space */
+    width: 80%; /* Adjusts the width of the audio player */
+    max-width: 600px; /* Limits the width of the audio player */
+    border-radius: 8px; /* Rounds the corners of the audio player */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow around the player */
+}
+
+figcaption {
+    text-align: center; /* Centers the caption */
+    font-style: italic; /* Makes the text italic */
+    margin-top: 10px; /* Adds space above the caption */
+    font-size: 1.1em; /* Slightly larger font size */
+    color: #333; /* Darker color for the caption text */
+}
+
+aside {
+    background-color: #D9BBA0; /* Same background as sections */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+aside h2 {
+    color: #594636; /* Match section headings */
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+aside p {
+    font-size: 1.2rem;
+    color: #594636;
+    line-height: 1.5;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside ul li {
+    font-size: 1.1rem;
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+aside ul li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+details {
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+details:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+summary {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #594636;
+    cursor: pointer;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+details p {
+    font-size: 1rem;
+    color: #594636;
+    margin-top: 5px;
+    padding: 5px;
+    line-height: 1.4;
+}
+.column-container {
+    column-count: 2; /* Creates two columns */
+    column-gap: 30px; /* Space between columns */
+    column-rule: 2px dashed #594636; /* Dashed rule between columns */
+    text-align: justify;
+    padding: 15px;
+}
+
+/* Ensure column content flows properly */
+.column-container p {
+    break-inside: avoid; /* Prevents awkward breaks in paragraphs */
+    padding: 5px 0;
+}
